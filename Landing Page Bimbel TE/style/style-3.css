@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #193F7D;
+}
+
+.main-wrapper {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 240px;
+  min-width: 240px;
+  background-color: #193F7D;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.logo-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px; 
+  margin-bottom: 0px; 
+}
+
+.logo {
+  width: 150px;   
+  height: auto;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.menu li {
+  width: 100%;
+}
+
+.menu a {
+  display: block;
+  padding: 14px 20px;
+  color: white;
+  text-decoration: none;
+  border-radius: 12px;
+  margin: 8px 16px;
+  background-color: transparent;
+  transition: background 0.3s ease;
+}
+
+.menu a.active,
+.menu a:hover {
+  background-color: white;
+  color: #193F7D;
+  font-weight: bold;
+}
+
+.logout {
+  margin-top: auto;
+  padding-bottom: 30px;
+}
+
+.logout a {
+  color: white;
+  text-decoration: none;
+}
+
+.container-review {
+  margin-left: 240px; 
+  flex: 1;
+  padding: 40px;
+  background-color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-review h2 {
+  margin-bottom: 20px;
+  color: #193F7D;
+}
+
+.table-review {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-review th, .table-review td {
+  padding: 14px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.table-review th {
+  background-color: #193F7D;
+  color: white;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-circle {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-approve {
+  background-color: #28c76f; /* hijau */
+}
+
+.btn-reject {
+  background-color: #ea5455; /* merah */
+}
